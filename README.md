@@ -1,6 +1,6 @@
 # deCrypt-An-e-commerce-platform
 
-An e-commerce website with seller, user, and admin login functionalities. It allows users to browse and purchase products, read reviews, and make secure payments. Sellers can create accounts, request product additions, deliver items, and receive payments. Admins manage product approval, discounts, and payments. The website incorporates a content recommendation system based on the TF-IDF algorithm to provide personalized product suggestions.
+An e-commerce website with seller, user, and admin login functionalities. It allows users to browse and purchase products, read reviews, and make secure payments using **meta mask**. Sellers can create accounts, request product additions, deliver items, and receive payments. Admins manage product approval, discounts, and payments. The website incorporates a content recommendation system based on the **TF-IDF algorithm** to provide personalized product suggestions.
 
 ## Technologies Used
 
@@ -8,7 +8,7 @@ An e-commerce website with seller, user, and admin login functionalities. It all
 - Backend: Node.js, Express.js
 - Database: MySQL
 - Smart Contracts: Solidity
-- Payment: Ganache
+- Payment: Meta mask and Ganche
 - Content Recommendation: TF-IDF Algorithm
 
 ## Features
