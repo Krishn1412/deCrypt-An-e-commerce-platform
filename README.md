@@ -1,6 +1,6 @@
 # deCrypt-An-e-commerce-platform
 
-An ecommerce website with seller, user, and admin login functionalities. It allows users to browse and purchase products, read reviews, and make secure payments. Sellers can create accounts, request product additions, deliver items, and receive payments. Admins manage product approval, discounts, and payments. The website incorporates a content recommendation system based on the TF-IDF algorithm to provide personalized product suggestions.
+An e-commerce website with seller, user, and admin login functionalities. It allows users to browse and purchase products, read reviews, and make secure payments. Sellers can create accounts, request product additions, deliver items, and receive payments. Admins manage product approval, discounts, and payments. The website incorporates a content recommendation system based on the TF-IDF algorithm to provide personalized product suggestions.
 
 ## Technologies Used
 
@@ -28,8 +28,11 @@ An ecommerce website with seller, user, and admin login functionalities. It allo
 1. Clone the repository.
 2. Install the necessary dependencies using `npm install`.
 3. Set up the MySQL database and configure the connection.
-4. Start the server using `npm start`.
-5. Access the website in your browser at `http://localhost:3000`.
+4. Start the server using `nodemon user_management.js`.
+5. Open the Ganache GUI client that you downloaded and installed. This will start your local blockchain instance.
+6. On the other terminal compile the smart contract using `$ truffle migrate --reset` and then run it using `npm run dev`.
+7. Unlock Metamask. Connect the meta mask to your local Ethereum blockchain provided by Ganache. Import an account provided by ganache.
+8. Access the website in your browser at `http://localhost:5000`.
 
 ## Contributing
 
