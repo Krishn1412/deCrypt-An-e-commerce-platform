@@ -1,0 +1,231 @@
+{
+  "contractName": "test",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hello",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"hello\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/test.sol\":\"test\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/test.sol\":{\"keccak256\":\"0x7b32e06ef6c35e91bc3cfd026251694a49bace66d3df06213b4e4536d48b0c57\",\"urls\":[\"bzz-raw://7adebbb143bc8c6de005549307358448ede2db5850b2f8e0612335f860736513\",\"dweb:/ipfs/QmUPFkcLRwiDu9D6AXr1nN58qW8K3jVEqAVrq52zigBPfh\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008055348015601357600080fd5b506084806100226000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806319ff1d2114602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820164d766bb8a011635ba9be37cabac3f2f85ed06286e3566cc460c53c38defc0564736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806319ff1d2114602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820164d766bb8a011635ba9be37cabac3f2f85ed06286e3566cc460c53c38defc0564736f6c63430005100032",
+  "sourceMap": "34:43:2:-;;;72:1;54:19;;34:43;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:43:2;;;;;;;",
+  "deployedSourceMap": "34:43:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:43:2;;;;;;;;;;;;;;;;;;;54:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\r\ncontract test{\r\n    uint public hello=0;\r\n}",
+  "sourcePath": "E:\\Krishn\\bits\\SEM 5\\blockchain1\\og-website\\contracts\\test.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/test.sol",
+    "exportedSymbols": {
+      "test": [
+        91
+      ]
+    },
+    "id": 92,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 87,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 91,
+        "linearizedBaseContracts": [
+          91
+        ],
+        "name": "test",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 90,
+            "name": "hello",
+            "nodeType": "VariableDeclaration",
+            "scope": 91,
+            "src": "54:19:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 88,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "54:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 89,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "72:1:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 92,
+        "src": "34:43:2"
+      }
+    ],
+    "src": "0:77:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/test.sol",
+      "exportedSymbols": {
+        "test": [
+          91
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 87,
+        "name": "PragmaDirective",
+        "src": "0:32:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            91
+          ],
+          "name": "test",
+          "scope": 92
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "hello",
+              "scope": 91,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 88,
+                "name": "ElementaryTypeName",
+                "src": "54:4:2"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 89,
+                "name": "Literal",
+                "src": "72:1:2"
+              }
+            ],
+            "id": 90,
+            "name": "VariableDeclaration",
+            "src": "54:19:2"
+          }
+        ],
+        "id": 91,
+        "name": "ContractDefinition",
+        "src": "34:43:2"
+      }
+    ],
+    "id": 92,
+    "name": "SourceUnit",
+    "src": "0:77:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x0a83b9493aebB6eb71F174DA74CB39771cf51b4b",
+      "transactionHash": "0x6a2fb499b0ad79a98fe46a6cf1542ebe45ff8a9a48478cc89f5782de1d4e4599"
+    }
+  },
+  "schemaVersion": "3.4.12",
+  "updatedAt": "2023-03-03T16:08:39.848Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            Login/Signup
+        </title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/user_management.css">
+    </head>
+    <body class="svg tabbod">
+        <main class="table">
+            <section class="table_header">
+                <h1>Customer's Orders</h1>
+            </section>
+            <section class="table_body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Seller</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each results}}
+                        <tr>
+                            <td>{{ID}}</td>
+                            <td>{{Name}}</td>
+                            <td>{{CategoryID}}</td>
+                            <td>{{Inventory}}</td>
+                            <td>{{Price}}</td>
+                            <td>{{Descp}}</td>
+                            <td>{{Seller}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    <form action="/addProd" method="post" id="form1">
+        <select class="sel1" name="add" width=300 
+                style="width: 350px" id="address">
+            {{#each results}}
+                <option value='{{ID}}'>{{ID}}</option>
+            {{/each}}
+            <option value='' selected>Add Product with ID</option>
+        </select>
+        <div>
+            <button type="submit">Confirm </button>
+        </div> 
+    </form>
+</div>
+<form action="/apd23" method="get"> 
+        <div>
+            <button type="submit">Go back to Dashboard </button>
+        </div> 
+</form>
+    </body>
+
+</html>
+

@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>
+            Login/Signup
+        </title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/user_management.css">
+    </head>
+    <body class="svg">
+        <section class="formContainer padsignup">
+            <header>Shipping Details</header>
+            <form class="form" action="/personal2" method="post" id="form1">
+                <div class="input-box">
+                    <label>Address Line 1</label>
+                    <input type="text" placeholder="Address Line1" name="add1" />
+                </div>
+                <div class="input-box">
+                    <label>Address Line 2</label>
+                    <input type="text" placeholder="Address Line2" name="add2" />
+                </div>
+                <div class="input-box">
+                    <label>City</label>
+                    <input type="text" placeholder="City" name="city" />
+                </div>
+                <div class="input-box">
+                    <label>State</label>
+                    <div class="select-box">
+                        <select class="sel1" name="state" id="address">
+                      <option value='Bihar'>Bihar</option>
+                      <option value='Jharkhand'>Jharkhand</option>
+                      <option value='West Bengal'>West Bengal</option>
+                      <option value='Uttar Pradesh'>Uttar Pradesh</option>
+                      <option value='Madhya Pradesh'>Madhya Pradesh</option>
+                      <option value='' selected>Select your state</option>
+                    </select>
+                    </div>
+                </div>
+               
+                <div class="input-box">
+                    <label>Postal Code</label>
+                    <input type="text" placeholder="Postal Code" name="postalcode" />
+                </div>
+                <div class="input-box">
+                    <label>Payment Method</label>
+                    <div class="select-box">
+                        <select class="sel1" name="option" id="address">
+                            <option value='net'>Net banking</option>
+                            <option value='cards'>Cards</option>
+                            <option value='ethereum'>Ethereum</option>
+                            <option value='' selected>Select your payment option</option>
+                            </select>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label>Account Number</label>
+                    <input type="text" placeholder="Account Number" name="accnt" />
+                </div>
+                <div class="input-box">
+                    <label>Eth Address</label>
+                    <input type="text" placeholder="Eth Address" name="eth" />
+                </div>
+                <div>
+                  <button type="submit">Confirm </button>
+                </div>  
+                </form>
+
+                <form class="form" action="/personal12" method="post" id="form1">
+                    <div class="button">
+                      <button type="submit">If no changes here, press this </button>
+                    </div> 
+                </form>
+        </section>
+    </body>
+
+</html>
+

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Login/Signup
+        </title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/user_management.css">
+    </head>
+    <body class="svg">
+        <section class="formContainer ">
+            <header>Customer Details</header>
+            <form class="form" action="/personal" method="post" id="form1">
+                <div class="input-box">
+                    <label>Age</label>
+                    <input type="text" placeholder="Age" name="age" />
+                </div>
+                <div class="input-box">
+                    <label>Mobile Number</label>
+                    <input type="text" placeholder="Mobile" name="mobile" />
+                </div>
+               
+                <div class="input-box">
+                    <label>State</label>
+                    <div class="select-box">
+                        <select class="sel1" name="gender" id="address">
+                  <option value='Male'>Male</option>
+                  <option value='Female'>Female</option>
+                  <option value='Non Binary'>Non Binary</option>
+                  <option value='Prefer not to say'>Prefer not to say</option>
+                  <option value='' selected>Select your gender</option>
+                </select>
+                    </div>
+                </div>
+            
+                <div class="button">
+                  <button type="submit">Confirm </button>
+                </div>  
+                </form>
+        </section>
+     
+    </body>
+
+</html>
+

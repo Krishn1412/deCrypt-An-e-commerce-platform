@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Login/Signup
+        </title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/user_management.css">
+    </head>
+    <body class="svg1">
+        <div class="aDash">
+            <h1>Great to see you back!!</h1>
+            <h2>Select the action you'd like to perform.</h2>
+            <div class="aDashImg">
+                <img src="../metamask.gif">
+            </div>
+            
+            <div class="button-container ">
+               <form action="/sellAdProd" method="get"><button class="layButton" type="submit">Add Products</button></form> 
+               <form action="/sellAdImg" method="get"><button class="layButton" type="submit">Add Images</button></form> 
+                
+            </div> 
+             <div class="button-container ">
+                <form action="/sellViewProd" method="post"><button class="layButton" type="submit">View Products</button></form> 
+                <form action="/sellViewOrd" method="get"><button class="layButton" type="submit">View Orders</button></form> 
+                
+            </div> 
+             <div class="button-container ">
+                <form action="/sellViewRoute" method="get"><button class="layButton" type="submit">View Delivered</button></form> 
+                <form action="/logout_seller" method="get"><button class="layButton" type="submit">Log Out</button></form> 
+             </div> 
+        </div>
+
+    </body>
+
+</html>
+

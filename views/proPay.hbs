@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Login/Signup
+        </title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/user_management.css">
+    </head>
+    <body class="svg">
+    <div class="jaii">
+        <h1>Check Address</h1>
+        {{#each results1}}
+        <div>
+            <h3> The Address Is :- {{Address_Line1}}</h3>
+            <h3> The Address Is :- {{Address_Line2}}</h3>
+            <h3> The City Is :- {{City}}</h3>
+            <h3> The State Is :- {{State}}</h3>
+            <h3> The Postal Code Is :- {{Postal_Code}}</h3>
+        </div>
+        {{/each}}
+    </div>
+    <form action="/proPay2" method="post"> 
+            <input type = "hidden" name = "cartID" value='{{carr}}'/>
+            <input type = "hidden" name = "price" value='{{price}}'/>
+            <div>
+                <button type="submit">Proceed to Payment</button>
+            </div> 
+    </form>
+    </body>
+
+</html>
+

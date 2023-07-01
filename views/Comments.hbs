@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>
+            Login/Signup
+        </title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/test1.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/9e7ddc82c1.js" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </head>
+    <body class="svg" style="font-family: 'Montserrat', sans-serif;">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <section class="content-item" id="comments">
+        <h1>Do leave your Valuable comments!!</h1>
+    <div class="container kal">  
+    	<div class="row">
+            <div class="col-sm-12">   
+                <form action="/newCmnt" method="post">
+                	<h3 class="pull-left">New Comment</h3>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-sm-3 col-lg-2 hidden-xs">
+                            	<img class="img-responsive yoyo" src="../image/images-modified.png" alt="">
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-9 col-lg-10">
+                                <textarea class="form-control" id="message" name="message" placeholder="Your message" required=""></textarea>
+                                <button type="submit" class="bt btn btn-normal pull-right">Submit</button>
+                            </div>
+                        </div>  	
+                    </fieldset>
+                    <input type = "hidden" name = "email" value='{{message2}}'/>
+                    <input type = "hidden" name = "prodID" value='{{message3}}'/>
+                </form>
+                
+                <h3>{{#if message1}} {{message1}} {{/if}} comments</h3>
+                
+                <!-- COMMENT 1 - START -->
+                <div class="media">
+                    <a class="pull-left" href="#"><img class="media-object" src="../image/images-modified.png" alt=""></a>
+                    <div class="media-body">
+                        <h4 class="media-heading">John Doe</h4>
+                        <p>On one island lived a boy named Luffy, who is friends with a pirate named Captain Shanks. He looks up to Shanks as a hero. And would do anything to be part of his crew. But he was too young to become a pirate or part of any crew. One day Luffy encountered the Devil Fruit. He ate it and obtain the power the fruit hold. It gave him the ability to stretch with a body made of rubber. But once you eat the Devil's Fruit, you're cursed with the powers forever. And can never be able to swim again. After almost drowning in the water, his friend Shanks saved his life. As Shanks departs with his crew, he gave Luffy his prized straw hat. He told him to keep it with him, until they meet again. While Luffy was left feeling sad but honored at the same time. And his new destiny in life, will be to start up his own pirate crew, go to the Grand Line, find the One Piece treasure, to become the new Pirate King.</p>
+                        <ul class="list-unstyled list-inline media-detail pull-left">
+                            <li><i class="fa fa-calendar"></i>27/02/2014</li>
+                            <li><i class="fa fa-thumbs-up"></i>13</li>
+                        </ul>
+                        <ul class="list-unstyled list-inline media-detail pull-right">
+                            <li class=""><a href="">Like</a></li>
+                            <li class=""><a href="">Reply</a></li>
+                        </ul>
+                    </div>
+                </div>
+                {{#each results}}
+                <div class="media">
+                    <a class="pull-left" href="#"><img class="media-object" src="../image/images-modified.png" alt=""></a>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{userEmail}}</h4>
+                        <p>{{Text}}</p>
+                        <ul class="list-unstyled list-inline media-detail pull-left">
+                            <li><i class="fa fa-thumbs-up"></i>{{Likes}}</li>
+                        </ul>
+                        <ul class="list-unstyled list-inline media-detail pull-right">
+                            <li class=""><a href="">Like</a></li>
+                            <li class=""><a href="">Reply</a></li>
+                        </ul>
+                    </div>
+                </div>
+                {{/each}}
+                <!-- COMMENT 1 - END -->
+                
+            
+            </div>
+        </div>
+    </div>
+</section>
+        <script src="/index.js">
+
+        </script>
+    </body>
+
+</html>
+

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            Login/Signup
+        </title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/user_management.css">
+    </head>
+    <body class="svg">
+        <section class="formContainer padsellerReq">
+            <header>Product Details</header>
+            <form class="form" action="/sellerReq" method="post" id="form1">
+                <div class="input-box">
+                    <label>Prodcut Name</label>
+                    <input type="text" placeholder="Name" name="name" />
+                </div>
+                <div class="input-box">
+                    <label>Product Category</label>
+                    <div class="select-box">
+                        <select class="sel1" name="category" id="address">
+                  <option value='1'>Electronics</option>
+                  <option value='2'>Fashion</option>
+                  <option value='3'>Home Accessory</option>
+                  <option value='4'>Art and Craft</option>
+                  <option value='' selected>Select the product's category</option>
+                </select>
+                    </div>
+                </div>
+               
+                <div class="input-box">
+                    <label>Quantity</label>
+                    <input type="number" placeholder="Quantity" name="quantity" />
+                </div>
+                
+                <div class="input-box">
+                    <label>Price</label>
+                    <input type="number" placeholder="Price" name="price" />
+                </div>
+                <div class="input-box">
+                    <label>Discount</label>
+                    <input type="number" placeholder="DiscountID" name="discount" />
+                </div>
+                <div class="input-box">
+                    <label>Description</label>
+                    <input type="text" placeholder="Description" name="description" />
+                </div>
+                <div class="input-box">
+                    <label>Seller ID</label>
+                    <input type="number" placeholder="SellerID" name="seller" />
+                </div>
+                <div class="input-box">
+                    <label>Preview Image</label>
+                    <input type="text" placeholder="Preview Image" name="img" />
+                </div>
+                <div>
+                  <button type="submit">Confirm </button>
+                </div>  
+                </form>
+        </section>
+           
+    </body>
+
+</html>
+
