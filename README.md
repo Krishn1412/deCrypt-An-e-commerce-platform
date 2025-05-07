@@ -9,7 +9,7 @@ An e-commerce website with seller, user, and admin login functionalities. It all
 - Database: MySQL
 - Smart Contracts: Solidity
 - Payment: Meta mask and Ganche
-- Content Recommendation: TF-IDF Algorithm
+- Content Recommendation: TF-IDF Algorithm 
 
 ## Features
 
